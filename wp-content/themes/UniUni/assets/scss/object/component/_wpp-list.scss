@@ -1,0 +1,44 @@
+body{
+  counter-reset: rank_number;  
+}
+
+.c-wpp-list .wpp-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+  margin-bottom: 24px;
+  @include sp {
+    margin-bottom: 20px;
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: calc((100% / 3) - 12px);
+    height: 0;
+  }
+  & img {
+    margin-bottom: 10px;
+  }
+}
+
+.wpp_thumb_wrapper{
+  position: relative;
+    &:after{
+      counter-increment: rank_number;
+      content: counter(rank_number);
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include fz(20,14);
+      font-weight: bold;
+      color: $white;
+      background: $black;
+      padding: 0.2em 0.4em;
+      @include sp {
+        padding: 0.1em 0.4em;
+    }
+  }
+}

@@ -1,0 +1,226 @@
+.l-mv {
+  margin-bottom: 29px;
+  &_inner {
+    padding-top: 41px;
+    background: #F5F5F5;
+    position: relative;
+    @include sp {
+      padding-top: 20px;
+      padding-bottom: 50px;
+    }
+    &:before {
+      content: '';
+      width: 50%;
+      height: 40%;
+      position: absolute;
+      top: 20%;
+      right: 0%;
+      background: #FA0012;
+      @include sp {
+        top: 17%;
+        height: 20%;
+      }
+    }
+    &:after {
+      content: '';
+      width: 50%;
+      height: 20%;
+      position: absolute;
+      bottom: 10%;
+      left: 0%;
+      background: #FA0012;
+      @include sp {
+        bottom: 22%;
+        height: 13%;
+      }
+    }
+  }
+  &_sns {
+    position: absolute;
+    top: 3%;
+    right: 0%;
+    width: 32.3%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    @include sp {
+      display: none;
+    }
+    &_border {
+      position: relative;
+      width: 47%;      
+      & span {
+        content: '';
+        display: block;
+        height: 1px;
+        background: #707070;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+      }
+    }
+    &_list {
+      display: flex;
+      justify-content: space-between;
+      width: 42%;
+      min-width: 163px;
+      &_icon {
+        & a {
+          display: block;
+          & svg {
+            display: block;
+          }
+        }
+        &_twitter {
+          fill:#707070;
+          transition: all 0.5s ease 0s;
+          &:hover {
+            fill: #1DA1F2;
+          }
+        }
+        &_youtube {
+          fill: #707070;
+          transition: all 0.5s ease 0s;
+          &:hover {
+            fill: #DA1725;
+          }
+        }
+        &_voicy {
+          fill: #707070;
+          transition: all 0.5s ease 0s;
+          &:hover {
+            fill: #FF7C32;
+          }
+        }
+        &_voicy {
+          fill: #707070;
+          transition: all 0.5s ease 0s;
+          &:hover {
+            fill: #FF7C32;
+          }
+        }
+        &_stand-fm {
+          fill: #707070;
+          transition: all 0.5s ease 0s;
+          &:hover {
+            fill: #000;
+          }
+        }
+        &_note {
+          fill: #707070;
+          transition: all 0.5s ease 0s;
+          &:hover {
+            fill: #41C9B4;
+          }
+        }
+      }
+    }
+  }
+  &_swiper_wrap {
+    max-width:100%;
+    width: 1200px;
+    margin: 0 auto;	
+    position: relative;
+  }
+  &_main {
+    display: flex;
+    justify-content: space-between;
+    &_img {
+      width: 66%;
+      @include sp {
+        width: 95%;
+      }
+    }
+    &_cont {
+      position: absolute;
+      top: 16%;
+      right: 0;
+      width: 39%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 3% 3%;
+      background: $white;
+      z-index: 20;
+      @include sp {
+        position: relative;
+        width: 95%;
+        margin-left: auto;
+        padding: 20px 60px 20px 20px;
+      }
+      &_top {
+        @include fz(18);
+        display: inline-block;
+        font-weight: bold;
+        color: $orange;
+        margin-bottom: 33px;
+        @media screen and (max-width: 1250px) {
+          font-size: 16px;
+       }
+       @include sp {
+        font-size: 12px;
+        margin-bottom: 20px;
+       }
+        & span {
+          padding: 0.2em 0.7em;
+          border-right: solid 2px $orange; 
+          border-bottom: solid 2px $orange; 
+        }
+      }
+      &_title {
+        @include fz(30);
+        @include lh(1.4);
+        letter-spacing: 0.06em;
+        font-weight: bold;
+        margin-bottom: 30px;
+        @media screen and (max-width: 1250px) {
+           font-size: 22px;
+        }
+        @include sp {
+          font-size: 16px;
+          margin-bottom: 15px;
+         }
+      }
+      &_bottom {
+        display: flex;
+        &_cat {
+          @include fz(13);
+          font-weight: bold;
+          background: $orange;
+          padding: 0.5em 0.5em;
+          margin-right: 20px;
+          @media screen and (max-width: 1250px) {
+            font-size: 11px;
+         }
+         @include sp {
+          font-size: 10px;
+         }
+          & a {
+            color: white;
+            
+          }
+        }
+        &_date {
+          @include fz(17);
+          font-weight: bold;
+          padding-left: 5px;
+          padding-top: 0.25em;
+          color: $black;
+          @media screen and (max-width: 1250px) {
+            font-size: 15px;
+         }
+         @include sp {
+          font-size: 13px;
+         }
+        }
+      }
+    }
+  }
+  &_swiper {
+    width: 88%;
+    margin: 0 auto;
+    @include sp {
+      width: 80%;
+    }
+  }
+}

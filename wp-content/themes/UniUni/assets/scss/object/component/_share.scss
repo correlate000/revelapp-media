@@ -1,0 +1,39 @@
+.c-share {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  margin: 0 auto;
+  &_title {
+    position: relative;
+    @include fz(10);
+    font-weight: 400;
+    letter-spacing: 0.06rem;
+    padding-left: 20px;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      display: inline-block;
+      width: 12px;
+      height: 10px;
+      background-image: url('https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/share.svg');
+    }
+  }
+  & span {
+    content: '';
+    margin-top: 6px;
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background: #707070;
+  }
+  &_list {
+    display: flex;
+    &_item {
+      margin-right: 18px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

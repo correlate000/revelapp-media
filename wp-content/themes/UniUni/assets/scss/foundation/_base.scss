@@ -1,0 +1,45 @@
+.pcLg {
+  @include tb {
+    display: none!important;
+  }
+}
+
+.pc {
+  @include sp {
+    display: none!important;
+  }
+}
+
+.tb {
+  @include pcLg {
+    display: none!important;
+  }
+}
+
+.sp {
+  @include pc {
+    display: none!important;
+  }
+}
+
+html {
+	text-size-adjust: 100%;
+  font-size: 10px;
+}
+
+body {
+  font-size: 62.5%;
+  color: $black;
+  font-family: $font_noto;
+  display: none;
+}
+
+a {
+  color: $black;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

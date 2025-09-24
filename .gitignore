@@ -1,0 +1,55 @@
+# WordPress Core Files
+*.log
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/wp-cache-config.php
+wp-content/plugins/
+wp-content/mu-plugins/
+wp-admin/
+wp-includes/
+wp-*.php
+xmlrpc.php
+index.php
+license.txt
+readme.html
+
+# Ignore all themes except UniUni
+wp-content/themes/*
+!wp-content/themes/UniUni/
+
+# Database
+*.sql
+*.sqlite
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editor Files
+*.swp
+*.swo
+*~
+.idea
+.vscode
+
+# Node
+node_modules/
+npm-debug.log
+
+# Compiled CSS maps (optional - remove if you want to track them)
+*.css.map
+
+# Environment files
+.env
+.env.*
+
+# Backup files
+*.bak
+*.backup
+*.tmp

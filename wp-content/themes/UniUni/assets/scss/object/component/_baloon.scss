@@ -1,0 +1,283 @@
+/* 吹き出し部分 共通設定 */
+.n-fuki {
+  position: relative ; /* 吹き出しの三角位置設定用 */
+  margin: 23px 0 0 ; /* デフォルト設定リセット */
+  padding: 22px 20px ; /* 吹き出しの内側余白設定 */
+  /* 吹き出し三角部分 共通設定 */
+  &::before {
+    content: "";
+    position: absolute ;
+    top: 0%; /* 吹き出し三角部分の位置 */
+    border: 12px solid transparent; /* 吹き出し三角部分サイズ */
+    }
+  & p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 右からの吹き出しの色 */
+  &-right {
+    border: #000 1px solid;
+    /* 左からの吹き出し三角部分の位置・サイズ・色 */
+    &::before {
+      border-right: 10px solid #fff; 
+      content: "";
+      position: absolute;
+      top: 12px;
+      right: -11px;
+      margin-top: -12px;
+      border-top: 12px solid #FFF;
+      border-right: 12px solid transparent;
+      z-index: 2;
+      border-bottom: transparent;
+     }
+     
+    &:after {
+      content: "";
+      position: absolute;
+      top: 13px;
+      right: -13px;
+      margin-top: -14px;
+      border: 14px solid transparent;
+      border-top: 14px solid #000;
+      border-right: 12px solid transparent;
+      border-left: 12px solid transparent;
+      border-bottom: transparent;
+      z-index: 1;
+    }
+  }
+  &-left {
+    /* 左からの吹き出しの色 */
+    border: #000 1px solid; 
+    &::before {
+      left: -20px; border-right: 10px solid #fff; 
+     }
+    & p {
+      border: none;
+    }
+  }
+  /* キャラアイコン部分 共通設定 */
+  &-icon {
+    text-align: center; /* キャラアイコンを左右中央に */
+      &-img {
+        display: block;
+        position: relative;
+        & figcaption {
+          font-size: 14px!important;
+          line-height: 1!important;
+          @include lh(0);
+          font-weight: bold;
+          margin: 0!important;
+          padding: 0!important;
+          position: absolute;
+          top: 0;
+          width: 146px;
+        }
+        &.left {
+          & figcaption {
+            right: 70px;
+            text-align: right;
+          }
+        }
+        &.right {
+          & figcaption {
+            left: 70px;
+            text-align: left;
+          }
+        } 
+      } 
+    }
+}
+
+
+.wp-block-columns{
+  &.baloon {
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0 3em;
+    & p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+
+.wp-block-column {
+  &.n-fuki-left:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -11px;
+    margin-top: -12px;
+    border-top: 11.5px solid #FFF;
+    border-right: 0px solid transparent;
+    z-index: 2; 
+  }
+   &.wp-block-column.n-fuki-left:after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: -14px;
+    margin-top: -14px;
+    border: 14px solid transparent;
+    border-top: 14px solid #000;
+    border-right: 0px solid transparent;
+    z-index: 1;
+  }
+}
+
+
+
+
+.ath-colfix{
+  flex-wrap:nowrap!important;
+  &.wp-block-column:not(:first-child) {
+    @include sp {
+      margin-left: 5px;
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 781px) {
+  .wp-block-column:not(:only-child) {
+      flex-basis: 8%;
+      flex-grow: 0;
+  }
+}
+
+// .wp-block-snow-monkey-blocks-balloon {
+//   margin-bottom: 30px;
+// }
+
+
+// .smb-balloon {
+//   align-items: flex-start!important;
+//   justify-content: space-between;
+//   @media (max-width: 40em) {
+//     flex-direction: row!important;
+//   }
+//   // & .smb-balloon__body {
+//   //   &:before {
+//   //   border-bottom-color: inherit;
+//   //   border-bottom-style: solid;
+//   //   border-bottom-width: 10px;
+//   //   border-left: 5px solid transparent;
+//   //   border-right: 5px solid transparent;
+//   //   border-top: 0 solid transparent;
+//   //   content: "";
+//   //   display: block;
+//   //   height: 0;
+//   //   left: -24px;
+//   //   margin-left: 0;
+//   //   position: absolute;
+//   //   top: 0px;
+//   //   width: 0;
+//   //   border-color: transparent;
+//   //   border-top-color: #fff;
+//   //   border-width: 22px 27px 10px 0px;
+//   //   z-index: 2;
+//   // }
+//   //   &::after {
+//   //     margin-top: -16px!important;
+//   //     border-width: 0px 31px 22px 0px!important;
+//   //     border-top-color: #000!important;
+//   //     border-left-color: transparent!important;
+//   //     top: 15px!important;
+//   //     left: -31px!important;
+//   //   }
+//   // }
+//   &__body:after {
+//     left: -8px!important;
+//   }
+//   &--reverse {
+//     @media (max-width: 40em) {
+//       align-items: flex-start!important;
+//       flex-direction: row-reverse!important;
+//     }
+//   }
+//   &__person {
+//     position: relative;
+//   }
+//   &__figure {
+//     border: none!important;
+//     border-radius: 0 !important;
+//   }
+//   &__name {
+//     position: absolute;
+//     top: 0;
+//     right: 70px;
+//     text-align: right;
+//     font-size: 14px!important;
+//     font-weight: bold!important;
+//   }
+//   &__body {
+//     margin-top: 30px;
+//     // border: solid 1px #000!important;
+//     border-radius: 0!important;
+//     max-width: calc(98% - 80px)!important;
+//     &:after {
+//       top: 15px!important;
+//       @media (max-width: 40em) {
+//         right: -10px!important;
+//         transform: rotate(90deg);
+//       }
+//     }
+//   }
+//   // &--reverse .smb-balloon__body {
+//   //   &:before {
+//   //     border-bottom-color: inherit;
+//   //     border-bottom-style: solid;
+//   //     border-bottom-width: 10px;
+//   //     border-left: 5px solid transparent;
+//   //     border-right: 5px solid transparent;
+//   //     border-top: 0 solid transparent;
+//   //     content: "";
+//   //     display: block;
+//   //     height: 0;
+//   //     right: -24px;
+//   //     margin-left: 0;
+//   //     position: absolute;
+//   //     top: 0px;
+//   //     width: 0;
+//   //     border-color: transparent;
+//   //     border-top-color: #fff;
+//   //     border-width: 22px 27px 10px 0px;
+//   //     z-index: 2;
+//   //   }
+//   //   &:after {
+//   //     margin-top: -16px!important;
+//   //     border-width: 22px 27px 10px 0px!important;
+//   //     border-top-color: #000!important;
+//   //     border-left-color: transparent!important;
+//   //     top: 15px!important;
+//   //     right: -27px!important;
+//   //   }
+//   // }
+// }
+
+.wp-block-snow-monkey-blocks-balloon {
+  margin-bottom: 30px;
+}
+
+.smb-balloon {
+  &__figure {
+    border-radius: 0!important;
+    border: none!important;
+  }
+  &__name {
+    font-size: 14px!important;
+    font-weight: bold;
+    margin-top: 10px!important;
+    @media (max-width: 40em) {
+      margin-top: 0px!important;
+    }
+  }
+  & p {
+    margin-bottom: 0!important;
+  }
+}
+
+

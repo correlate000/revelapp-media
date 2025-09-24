@@ -1,0 +1,44 @@
+.l-container {
+  max-width:100%;
+  width: 990px;
+  padding: 0 20px;
+  margin: 0 auto;
+  @include tb {
+    width: 100%;
+    padding: 0 3%;
+  }
+  &--full {
+    width: 100%;
+    &--border {
+      border-top: solid 1px $black;
+      border-bottom: solid 1px $black;
+    }
+  }
+  &--swiper {
+    @extend .l-container;
+    @include sp {
+      padding: 0;
+    }
+  }
+  &--narrow {
+    @extend .l-container;
+    width: 49.8vw;
+  }
+  &--post {
+    width: 680px;
+    margin: 0 auto;
+    max-width: 100%;
+    @include sp {
+      width: calc(100% - 70px);
+    }
+  }
+  &--breadcrumbs {
+    @extend .l-container;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    @include sp {
+      width: 100%;
+    }
+  }
+}

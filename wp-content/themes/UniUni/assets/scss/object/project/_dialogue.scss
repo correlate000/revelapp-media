@@ -1,0 +1,31 @@
+.p-dialogue {
+  &_img {
+    margin-bottom: 40px;
+  }
+  &_sub {
+    margin-bottom: 11px;
+  }
+  &_title {
+    margin-bottom: 10px;
+  }
+  &_row {
+    margin-bottom: 37px;
+    display: flex;
+    &_cat {
+      @include fz(14);
+      color: $gray;
+    }
+    &_date {
+      @include fz(14);
+      color: $gray;
+    }
+  }
+  &_text {
+    @include fz(20);
+    @include lh(1.6);
+    margin-bottom: 30px;
+  }
+  &_quote {
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,24 @@
+.c-head {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  @include sp {
+    margin-bottom: 10px;
+  }
+  &--rank {
+    @extend .c-head;
+    justify-content: flex-start;
+  }
+  &--mbHalf {
+    @extend .c-head;
+    margin-bottom: 12px;
+  }
+  &--series {
+    @extend .c-head;
+    margin-bottom: 40px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid $black;
+
+  }
+}

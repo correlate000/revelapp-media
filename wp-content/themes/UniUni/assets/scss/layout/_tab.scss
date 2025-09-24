@@ -1,0 +1,114 @@
+/*tabの形状*/
+.tab{
+  display: flex;
+  flex-wrap: wrap;
+  &_new_list{
+    @include fz(16);
+    font-weight: bold;
+    color: $gray;
+    display: block;
+    padding: 0.3em 1em ;
+    border-bottom: 1px solid $gray;
+    @include sp {
+      @include fz(14);
+    }
+  }
+  &_new.active a{
+    color: $orange;
+    border-bottom: 1px solid $orange;
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  &_successive_list{
+    @extend .tab_new_list;
+  }
+  &_successive.active a{
+    color: $orange;
+    border-bottom: 1px solid $orange;
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  &--rank {
+    @extend .tab;
+    margin-left: 24px;
+    &_new_list{
+      @extend .tab_new_list;
+      
+    }
+    &_new.active a{
+      color: $orange;
+      border-bottom: 1px solid $orange;
+      animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+    }
+  
+    &_successive_list{
+      @extend .tab_new_list;
+    }
+    &_successive.active a{
+      color: $orange;
+      border-bottom: 1px solid $orange;
+      animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+    }
+  }
+  &--no-link {
+    @extend .tab;
+    margin-left: 10px;
+      &_list {
+        &.active {
+          border-bottom: 1px solid $orange;
+          & a {
+            color: $orange;
+            font-weight: bold;
+          }
+        }
+      }
+  }
+}
+
+.area {
+  display: none;/*はじめは非表示*/
+  opacity: 0;/*透過0*/
+    &.is-active {
+      display: block;/*表示*/
+      animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+  }
+  &--rank {
+    display: none;/*はじめは非表示*/
+    opacity: 0;/*透過0*/
+    &.is-active {
+      display: flex;/*表示*/
+      animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes displayAnime{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.p-top_new-and-rank_new_top_archive--latest.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.p-top_new-and-rank_new_top_archive--all.hidden {
+  display: none;
+  opacity: 0;
+}

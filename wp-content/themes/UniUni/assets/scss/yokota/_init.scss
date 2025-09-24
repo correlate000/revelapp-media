@@ -1,0 +1,562 @@
+//横田修正分
+
+header {
+  max-width: 100%;
+  @include tb{
+    position: fixed;
+    z-index: 999;
+    background: white;
+    top: 0;
+  }
+}
+main,#page{
+  @include tb{
+    padding-top: 60px;
+  }
+}
+
+.l-header{
+  width: 1200px;
+  height: 60px;
+  padding: 0;
+  @include tb{
+      max-width: 90%;
+  }
+  @include sp{
+    max-width: 100%;
+    padding: 5%;
+  }
+}
+.l-header_nav, .l-footer_nav .menu {
+    width: max-content;
+    min-width: inherit;
+    max-width: 100%;
+    @include sp{
+      min-width: inherit;
+    }
+    a{
+      transition: all ease-in-out .5s;
+      &:hover{
+        opacity: 0.7;
+   }
+    }
+}
+.l-header_btn {
+  @include tb{
+    position: absolute;
+    right: 5%;
+  }
+}
+.l-header_btn_text .menu {
+  @include sp{
+    height: 50vh;
+   margin: auto 0;
+  }
+}
+.l-header_logo{
+width: 160px;
+@include sp{
+  width: 100px;
+}
+}
+.l-header_btn_text .menu-top-container {
+  @include tb{
+    height: 60%;
+  }
+@include sp{
+  height: 100%;
+}
+li{
+  @include tb{
+    font-size: 2rem;
+  }
+}
+}
+
+.l-header_btn_text_sns_list_icon{
+svg{
+  @include tb{
+    fill: white;
+    height: 30px;
+    width: 170px;
+  }
+  @include sp{
+    height: 16px;
+    width: auto;
+    margin-right: 20px;
+  }
+}
+}
+
+.l-footer{
+  @include sp{
+      padding: 60px 0;
+  }
+}
+  .l-header_logo,.l-footer_logo{
+    transition: all ease-in-out .5s;
+    &:hover{
+      opacity: 0.7;
+ }
+}
+
+.swiper-slide{
+  &:hover{
+    opacity: 1;
+}
+img{
+  transition: all ease-in-out .3s;
+  &:hover{
+    filter: drop-shadow(0 10px 5px rgba(0,0,0,0.4)) saturate(110%) brightness(110%);
+}
+}
+}
+
+.slider_mv {
+    margin: 40px 0 160px;
+    @include sp{
+      margin: 40px 0 80px;
+    }
+}
+
+.l-mv_swiper {
+    width: 100%!important;
+}
+
+.local-nav_list a {
+  @include sp{
+    font-size: 14px;
+  }
+}
+
+/*gnavエフェクト*/
+
+#menu-top{
+}
+
+#menu-top li a{
+    display: block;
+    padding:10px;
+    text-decoration: none;
+    color: #333;
+    transition: all ease-in-out .3s;
+}
+
+#menu-top li a{
+    /*線の基点とするためrelativeを指定*/
+  position: relative;
+}
+
+#menu-top li.current-menu-item a,
+#menu-top li a:hover{
+  color:$orange;
+}
+#menu-top li.current-menu-item a:after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 2px;
+    background:$orange;
+    /*アニメーションの指定*/
+    transition: all .6s;
+    transform: scale(1, 1);/*X方向0、Y方向1*/
+    transform-origin: left top;/*左上基点*/
+}
+
+#menu-top li a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 2px;
+    background:$orange;
+    /*アニメーションの指定*/
+    transition: all .6s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: left top;/*左上基点*/
+}
+
+/*現在地とhoverの設定*/
+#menu-top li.current a::after,
+#menu-top li a:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+
+.l-footer_nav .menu {
+  @include sp{
+    margin-top: 60px;
+  }
+}
+.l-footer_nav .menu-item {
+    padding: 0 10px;
+  @include sp{
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+
+.n-fuki {
+    padding: 12px 20px;
+}
+.wp-block-column.n-fuki-left:before {
+    left: -12px;
+}
+.wp-block-column.wp-block-column.n-fuki-left:after {
+    border-top: 13px solid #000;
+}
+.n-fuki-right::before {
+    right: -12px;
+}
+.n-fuki-right:after {
+    right: -14px;
+    border-top: 13px solid #000;
+    border-right: 13px solid transparent;
+}
+
+.wp-block-image{
+  figure{
+    @include sp{
+    margin-bottom: 30px!important;
+  }
+  }
+  figcaption {
+      word-break: break-word;
+      padding: 0;
+  }
+}
+.l-section--content .post-contents{
+  word-break: break-all;
+  @include sp{
+    width: 90%!important;
+  }
+}
+.post-contents h2 {
+  font-size: 24px;
+  padding-bottom: 0px;
+  padding-left: 1em;
+  @include sp{
+    font-size: 18px;
+  }
+}
+.post-contents h2:after {
+    content: '';
+    width: 10px;
+    height: 100%;
+}
+.post-contents figure {
+  @include sp{
+    width: 100%;
+  }
+}
+figure.wp-block-image.size-full.n-fuki-icon-img.left {
+    margin-left: 60%;
+}
+
+.post-contents strong {
+  border-bottom: 2px solid #FAF000;
+  display: inline;
+    &:after{
+      content: none;
+    }
+}
+.c-post_cont_title {
+    line-height: 1.5;
+}
+.c-post_cont_row_cat_list {
+    margin-right: 10px;
+}
+
+.c-linkBtn_sns_left, #btn-fixed .c-linkBtn_sns_left--fixed {
+@include sp{
+  position: fixed;
+      top: inherit;
+    width: 40px;
+    left: 55px;
+    bottom: -90px;
+}}
+#btn-fixed .c-linkBtn_sns_left--fixed,#btn-fixed .c-linkBtn_sns_right--fixed{
+  @include sp{
+    display: none;
+  }
+}
+.c-linkBtn_sns_list, .c-linkBtn_sns_right_list{
+  @include sp{
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-flow: nowrap;
+        width: 140px;
+        height: 40px;
+  }
+}
+
+.c-linkBtn_sns_right {
+  @include tb{
+    right: 10px;
+  }
+  @include sp{
+    top: initial;
+    width: 40px;
+    left: 160px;
+    right: initial;
+    position: fixed;
+    bottom: -63px;
+  }
+}
+.c-linkBtn_sns_right_list_icon{
+  @include sp{
+    margin-right: 10px;
+  }
+}
+#btn-fixed .c-linkBtn_sns_right--fixed {
+  @include sp{
+    top: initial;
+    width: 37px;
+    right: 20px;
+    bottom: 100px;
+  }
+}
+.c-linkBtn_sns_right, .c-linkBtn_sns_left{
+  @include sp{
+  }
+}
+.c-linkBtn_sns_right_list {
+  @include sp{
+    height: 100px;
+  }
+}
+
+.c-linkBtn_sns_right_list_icon svg {
+  @include sp{
+    width: 30px;
+  }
+}
+.c-author_cont {
+    @include sp{
+      font-size: 14px;
+    }
+}
+.c-textArea--col-3_title {
+  @include sp{
+    font-size: 14px;
+  }
+}
+.c-breadcrumbs span {
+  @include sp{
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+}
+.p-books {
+    max-width: 100%;
+    @include sp{
+      width: 90%;
+    }
+}
+
+.p-books-textArea--col-2_cont_link {
+    &:before {
+      position: absolute;
+      top: 0;
+      left: -75%;
+      z-index: 2;
+      display: block;
+      content: '';
+      width: 50%;
+      height: 100%;
+      background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+      -webkit-transform: skewX(-25deg);
+      transform: skewX(-25deg);
+    }
+    &:hover::before {
+      -webkit-animation: shine .75s;
+      animation: shine .75s;
+    }
+  }
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+
+
+.btn_concept{
+  position: fixed;
+  bottom: 20px;
+  right: 90px;
+  z-index: 99999;
+  @include sp{
+    bottom: 30px;
+    right: 20px;
+  }
+  a{
+    transition: all .6s;
+    width: 90px;
+    display: block;
+    @include sp{
+      width: 80px;
+    }
+&:hover{
+  opacity: 0.7;
+}
+  }
+}
+
+#wpfront-scroll-top-container{
+  @include sp{
+    display: none!important;
+  }
+}
+
+#page{
+  margin: 60px auto;
+  h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    @include sp{
+      font-size: 20px;
+    }
+  }
+  h2{
+    font-size: 24px;
+    margin-bottom: 30px;
+    @include sp{
+      font-size: 18px;
+    }
+  }
+  p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: justify;
+    @include sp{
+      font-size: 14px;
+    }
+  }
+  ul,ol{
+    margin-bottom: 30px;
+    @include sp{
+      font-size: 20px;
+    }
+
+  }
+  li{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    list-style: auto;
+    margin-left: 2em;
+    @include sp{
+      font-size: 14px;
+    }
+    ol{
+      margin-top: 15px;
+    }
+  }
+  td{
+    font-size: 16px;
+    line-height: 1.5;
+    border-bottom: 1px solid;
+    padding: 10px;
+    @include sp{
+      font-size: 14px;
+    }
+  }
+  .size-full,.size-large{
+    max-width: 100%;
+    margin-bottom: 80px;
+  }
+  &.concept{
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 0.2em;
+    h1{
+      font-size: 60px;
+      font-weight: 900;
+      margin-bottom: 60px;
+      @include sp{
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+    }
+    h2{
+      font-size: 24px;
+      font-weight: 900;
+      @include sp{
+        font-size: 14px;
+      }
+    }
+    p.figure{
+    width: 264px;
+    margin: 60px auto;
+    @include sp{
+      margin: 30px auto;
+    }
+    }
+    .vision, .mission{
+      margin: 120px auto;
+      text-align: center;
+      @include sp{
+        margin: 60px auto;
+      }
+      h3{
+        font-size: 16px;
+        font-weight: 900;
+        text-align: center;
+        border-bottom: 2px solid;
+        width: 360px;
+        margin: 0 auto 30px;
+        padding-bottom: 10px;
+        @include sp{
+          font-size: 14px;
+          width: 100px;
+        }
+      }
+      p.midashi{
+        font-size: 30px;
+        font-weight: 900;
+        text-align: center;
+        @include sp{
+          font-size: 20px;
+        }
+      }
+      p.desc{
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        @include sp{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+
+.hidden-pc{
+  display: none;
+  @include sp{
+    display: block;
+  }
+}
+.hidden-sp{
+  @include sp{
+    display: none;
+  }
+}

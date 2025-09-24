@@ -1,0 +1,33 @@
+.pagenation {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  @include sp {
+    width: 100%;
+  }
+  & .page-numbers {
+    @include fz(14,10);
+    font-weight: bold;
+    padding: 1em 1.5em;
+    background: $lightGray;
+    margin-right: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
+    @include sp {
+      padding: 0.5em 1em;
+    }
+    &.current {
+      color: $white;
+      background: $black;
+    }
+    &.prev {
+      margin-right: 1em;
+    }
+     &.next {
+       margin-left: calc(1em - 5px);
+     }
+
+  }
+} 

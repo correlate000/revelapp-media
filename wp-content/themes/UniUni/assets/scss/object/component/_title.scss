@@ -1,0 +1,65 @@
+.c-title {
+  color: $white;
+  background-color: $black;
+  display: inline-block;
+  font-weight: bold;
+  padding:0.12em 0.3em; 
+  @include fz(20,14);
+  @include sp {
+    
+  }
+  &--xs {
+    @extend .c-title;
+    @include fz(13,11);
+  }
+  &--sm {
+    @extend .c-title;
+    @include fz(17,13);
+  }
+  &--small {
+    @include fz(16,14);
+    font-weight: bold;
+  }
+  &--middle {
+    @include fz(24);
+    font-weight: bold;
+  }
+  &--big {
+    @include fz(34,20);
+    font-weight: bold;
+  }
+  &--sub{
+    &--orange {
+      @include fz(16,12);
+      font-weight: bold;
+      color: $orange;
+    }
+    &--bgGray {
+      @include fz(18);
+      font-weight: bold;
+      background: $gray;
+      padding: 1em 1em;
+    }
+  }
+  &--series {
+    @include fz(16,12);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding-top: 0.1em;
+    position: relative;
+    margin-left: 41px;
+    padding: 0.09em 0;
+    &::before {
+      @include fz(12,10);
+      content: '連載';
+      display: inline-block;
+      font-weight: 400;
+      color: $white;
+      background: $orange;
+      padding: 0.3em 0.3em;
+      position: absolute;
+      top: 0%;
+      left: -41px;
+    }
+  }
+}

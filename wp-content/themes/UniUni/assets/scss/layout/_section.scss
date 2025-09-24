@@ -1,0 +1,111 @@
+#archive .l-section {
+  padding: 20px 0;
+}
+
+.l-section {
+  &--new-and-rank {
+    @extend .l-section;
+    margin-bottom: 38px;
+  }
+  &--serialization {
+    @extend .l-section;
+    margin-bottom: 50px;
+    @include sp {
+      margin-bottom: 30px;
+    }
+  }
+  &--video {
+    @extend .l-section;
+    margin-bottom: 53px;
+    @include sp {
+      margin-bottom: 30px;
+    }
+  }
+  &--audio {
+    @extend .l-section;
+    margin-bottom: 62px;
+  }
+  &--book {
+    @extend .l-section;
+    margin-bottom: 74px;
+    @include sp {
+      margin-bottom: 30px;
+    }
+  }
+  &--cat {
+    @extend .l-section;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 49px;
+    }
+  }
+  &--recommended {
+    @extend .l-section;
+    padding-top: 39px;
+    @include sp {
+      padding: 20px 0 20px;
+    }
+  }
+  &--page-link {
+    @extend .l-section;
+    margin: 40px 0;
+
+  }
+  &--breadcrumbs {
+    @extend .l-section;
+    background: #ebebeb;
+    padding: 16px 0 11px!important;
+  } 
+  &--rank {
+    @extend .l-section;
+    padding: 39px 0;
+  }
+  &--post {
+    @extend .l-section;
+    padding: 37px 0 37px;
+    background: #f5f5f5;
+    &--book {
+      @extend .l-section--post;
+      background: $white;
+    }
+  }
+  &--content {
+    @extend .l-section;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    @include sp {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+  &--local-nav {
+    @extend .l-section;
+    margin: 45px 0;
+    @include sp {
+      margin: 20px auto
+    }
+  }
+  &--share {
+    margin-top: 73px;
+    margin-bottom: 80px;
+    @include sp {
+      margin-top: 30px;
+    margin-bottom: 40px;
+    }
+  }
+  &--series-taxonomy-content {
+    @extend .l-section;
+    margin: 40px 80px;
+  }
+  &--swiper-series-post {
+    @extend .l-section;
+    margin: 79.6px 0 73px;
+    @include sp {
+      margin: 35px 0 35px;
+    }
+  }
+}
+
+.page section:nth-child(2n),.archive:not(.tax-genre) section:nth-child(2n),.contents_bottom section:nth-child(2n){ 
+  background: #f5f5f5;
+}

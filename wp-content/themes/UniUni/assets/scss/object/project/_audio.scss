@@ -1,0 +1,32 @@
+.p-audio {
+  width: 72.5vw;
+  margin: 0 auto 20px;
+  &_textArea {
+    &--col-2 {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 41px;
+      &_img {
+        width: 52%;
+      }
+      &_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+        width: 43.8%;
+        height: 100%;
+        &_title {
+          @extend .c-textArea_title;
+          @include fz(29);
+          margin-bottom: 10px;
+        }
+        &_date {
+          @extend .c-textArea_date;
+          @include fz(15);
+        }
+      }
+    }
+  }
+}
+

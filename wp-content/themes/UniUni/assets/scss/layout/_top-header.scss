@@ -1,0 +1,33 @@
+#top .l-header {
+  &_logo {
+    height: 136px;
+    & h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      & a {
+        display: block;
+        & img {
+          height: 84.25px;
+        }
+      }
+    }
+  }
+
+  &_nav {
+    height: 96px;
+    background: $gray;
+    &_inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70vh;
+      height: 100%;
+      margin: 0 auto;
+    }
+    &_cmn {
+      @include fz(16);
+    }
+  }
+}

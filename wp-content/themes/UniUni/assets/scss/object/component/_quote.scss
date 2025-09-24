@@ -1,0 +1,6 @@
+.c-quote {
+  @include fz(18);
+  @include lh(1.5);
+  background: $gray;
+  padding: 1em 1em;
+}

@@ -1,0 +1,75 @@
+.fixed-cover {
+  width: 100%;
+  position: relative;
+}
+
+.c-post{
+  &_mv {
+    width: 100%;
+    &_img {
+      margin-bottom: 30px;
+      &--series {
+        width: 50%;
+        margin: 0 auto 40px
+      }
+    }
+    &_series-desc {
+      @include fz(16);
+      @include lh(1.875);
+      letter-spacing: 0.1em;
+      margin-bottom: 36px;
+    }
+  }
+  &_cont {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 10px;
+    &_sub {
+      margin-bottom: 11px;
+      letter-spacing: 0.1em;
+    }
+    &_title {
+      margin-bottom: 10px;
+    }
+    &_row {
+      display: flex;
+      @include sp {
+        display: block;
+      }
+      &_date {
+        @include fz(12);
+        color: #707070;
+        margin-left: 20px;
+        margin-right: 20px;
+        position: relative;
+        @include sp {
+          margin-bottom: 20px;
+        }
+        &:before {
+          content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/post_calendar.svg");
+          position: absolute;
+          left: -20px;
+        }
+      }
+      &_cat {
+        &_list {
+          display: inline-block; 
+          @include fz(12);
+          margin-right: 20px;
+          @include sp {
+            margin-right: 5px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    &_text {
+      @include fz(20);
+      @include lh(1.6);
+      margin-bottom: 30px;
+    }
+    &_quote {
+      margin-bottom: 40px;
+    }
+  }
+}

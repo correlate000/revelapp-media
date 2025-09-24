@@ -1,0 +1,13 @@
+.c-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  @include fz(12,10);
+  color: $gray;
+  & span {
+    position: relative;
+    color: $gray;
+    margin-left: 10px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+  }
+}

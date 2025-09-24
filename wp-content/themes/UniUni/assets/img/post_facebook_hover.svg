@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58" viewBox="0 0 58 58">
+  <defs>
+    <filter id="楕円形_17" x="0" y="0" width="58" height="58" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_178" data-name="グループ 178" transform="translate(9 -58)">
+    <g transform="matrix(1, 0, 0, 1, -9, 58)" filter="url(#楕円形_17)">
+      <circle id="楕円形_17-2" data-name="楕円形 17" cx="20" cy="20" r="20" transform="translate(9 6)" fill="#eee"/>
+    </g>
+    <path id="iconmonstr-facebook-1" d="M9,8H6v4H9V24h5V12h3.642L18,8H14V6.333C14,5.378,14.192,5,15.115,5H18V0H14.192C10.6,0,9,1.583,9,4.615Z" transform="translate(8 72)" fill="#1877f2"/>
+  </g>
+</svg>

@@ -1,0 +1,1 @@
+<a href="javascript:void(0);" rel="nofollow" onClick="window_open('https://twitter.com/intent/tweet?text=<?php the_title(); ?>｜UniUni(ゆにゆに)&hashtags=uniuni&via=uniuni_media&related=uniuni_media&url=<?php the_permalink(); ?>')">

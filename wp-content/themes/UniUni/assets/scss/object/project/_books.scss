@@ -1,0 +1,137 @@
+.p-books {
+  width: 72.5vw;
+  margin: 0 auto 20px;
+  &-textArea {
+    &--col-2 {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+      @include sp {
+        display: block;
+      }
+      &_img {
+        width: 25.9%;
+        @include sp {
+          width: 70%;
+          margin :0 auto;
+          margin-bottom: 20px;
+        } 
+      }
+      &_cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+        width: 70.2%;
+        height: 100%;
+        @include sp {
+          width: 100%
+        }
+        &_title {
+          @extend .c-textArea_title;
+          @include fz(30,20);
+          margin-bottom: 10px;
+          @include sp {
+            text-align: center;
+          }
+        }
+        &_item {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 30px;
+          & dt {
+            @include fz(16,14);
+            padding: 8px 0;
+            width: 14%;
+            display: flex;
+            font-weight: normal;
+            @include sp {
+              width: 40%;
+            }
+          }
+          & dd {
+            @include  fz(16,14);
+            width: 86%;
+            padding: 8px 0;
+            @include sp {
+              width: 60%;
+            }
+          }
+        }
+        &_text {
+          @include fz(16,14);
+          @include lh(1.6);
+          margin-bottom: 33px;
+        }
+        &_link {
+          @include fz(22,16);
+          font-weight: bold;
+          position: relative;
+          padding: 0.5em 0em;
+          border-radius: 0px;
+          border: solid 2px $black;
+          background: $orange;
+          color: $white;
+          text-align: center;
+          @include sp {
+            padding-right: 30px;
+          }
+          &:after {
+            content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/link-button_icon.svg");
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 54.375px;
+            height: 100%;
+            background: $white;
+            border-left: 2px solid $black;
+            @include sp {
+              width: 36px;
+            }
+          }
+        }
+      }
+      &_editor {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 47px;
+        @include sp {
+          display: block;
+        }
+        & dt {
+          @include fz(20,16);
+          padding: 8px 0;
+          width: 25.9%;
+          display: flex;
+          @include sp {
+            width: 100%;
+            justify-content: center;
+          }
+        }
+        & dd {
+          @include  fz(16,14);
+          @include lh(1.6);
+          width: 70.2%;
+          padding: 8px 0;
+          @include sp {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  &_button {
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+

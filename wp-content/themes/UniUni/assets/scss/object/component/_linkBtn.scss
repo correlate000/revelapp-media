@@ -1,0 +1,177 @@
+/*========= ページトップのためのCSS ===============*/
+.c-linkBtn {
+  &_sns {
+    &_left {
+      position: absolute;
+      top:130px;
+      left: calc(((100vw - 680px) / 2 ) - 53px );
+      transform: translateX(-100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 170px;
+      z-index: 10;
+      @include sp {
+        top: 18px;
+        width: 30px;
+        left: 35px;
+      }
+      &_list {
+        height: 100%;
+        &_icon {
+          margin-bottom: 2px;
+          & a {
+            display: block;
+            pointer-events: auto;
+          }
+          & svg {
+            display: block;
+            @include sp {
+              width: 100%;
+            }
+          }
+          &_twitter {
+            fill: #707070;
+            transition: all 0.5s ease 0s;
+            &:hover {
+              fill: #1DA1F2;
+            }
+          }
+          &_facebook {
+            fill: #707070;
+            transition: all 0.5s ease 0s;
+            &:hover {
+              fill: #1877F2;
+            }
+          }
+          &_line {
+            fill: #707070;
+            transition: all 0.5s ease 0s;
+            &:hover {
+              fill:#00B900;
+            }
+          }
+        }
+      }
+    }
+    &_right {
+      position: absolute;
+      top:130px;
+      right: calc(((100vw - 680px) / 2 ) - 100px );
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 170px;
+      z-index: 10;
+      @include sp {
+        top: 18px;
+        width: 30px;
+        right: 5px;
+      }
+      &_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        &_icon {
+          & a {
+            display: block;
+            pointer-events: auto;
+          }
+          & svg {
+            display: block;
+            @include sp {
+              width: 20px;
+            }
+          }
+          &_video {
+            fill: #999;
+              transition: all 0.5s ease 0s;
+              &:hover {
+                fill: $orange;
+              }
+          }
+          &_voicy {
+            fill: #999;
+              transition: all 0.5s ease 0s;
+              &:hover {
+                fill: $orange;
+              }
+          }
+          &_column {
+            fill: #999;
+              transition: all 0.5s ease 0s;
+              &:hover {
+                fill: $orange;
+              }
+          }
+        }
+      }
+    }
+  }
+}
+
+#btn-fixed .c-linkBtn {
+  &_sns {
+    &_left--fixed {
+      top: 200px;
+      @extend .c-linkBtn_sns_left;
+      @include sp {
+        top: auto;
+        bottom: 0;
+      }
+    }
+    &_right--fixed {
+      top: 200px;
+      @extend .c-linkBtn_sns_right;
+      @include sp {
+      top: auto;
+      bottom: 0;
+      }
+    }
+  }
+}
+
+/*リンクを右下に固定*/
+#btn-fixed {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  pointer-events: none;
+    /*はじめは非表示*/
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+
+#btn-fixed.UpMove{
+  animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#btn-fixed.DownMove{
+  animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+    opacity: 1;
+  transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+  transform: translateY(0px);
+  }
+}

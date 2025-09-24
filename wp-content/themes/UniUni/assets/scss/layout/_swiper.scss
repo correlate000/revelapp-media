@@ -1,0 +1,253 @@
+.swiper-container {
+  overflow: hidden;
+}
+
+.swiper-slide {
+    overflow: hidden;
+    transition: .5s;
+    opacity: 1;
+    &:hover {
+      opacity: 0.7;
+    }
+    &-active {
+      opacity: 1;
+      z-index: 1;
+    }
+}
+
+.l-mv_swiper {
+  position: relative;
+
+  & .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    left: -49px;
+    content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/arrow-prev.svg");
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    @include tb {
+      top: 70%;
+      left: -20px;
+      width: 20px;
+      height: 20px;
+      z-index: 50;
+    }
+    &:after {
+      display: none;
+    }
+
+    &--mv {
+      @extend .swiper-button-prev;
+    }
+  }
+
+  & .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    right: -49px;
+    content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/arrow-next.svg");
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    @include tb {
+      top: 70%;
+      right: -20px;
+      width: 20px;
+      height: 20px;
+      z-index: 50;
+    }
+    &:after {
+      display: none;
+    }
+
+    &--mv {
+      @extend .swiper-button-next;
+    }
+  }
+}
+
+.slider_video {
+  width: 100%;
+}
+
+.p-top_video_swiper {
+  position: relative;
+  & .swiper-button-prev--video {
+    position: absolute;
+    top: 34%;
+    left: -67px;
+    content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/arrow-prev.svg");
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    @include tb {
+      top: 26%;
+      left: -10px;
+      width: 20px;
+      height: 20px;
+      z-index: 50;
+    }
+    &:after {
+      display: none;
+    }
+  }
+  
+  & .swiper-button-next--video {
+    position: absolute;
+    top: 34%;
+    right: -59px;
+    content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/arrow-next.svg");
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    @include tb {
+      top: 26%;
+      right: -10px;
+      width: 20px;
+      height: 20px;
+      z-index: 50;
+    }
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.slider_serialization {
+  width: 100%;
+}
+
+.p-top_serialization_swiper {
+  position: relative;
+  & .swiper-button-prev--series {
+    position: absolute;
+    top: 43%;
+    left: -67px;
+    content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/arrow-prev.svg");
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    @include tb {
+      top: 40%;
+      left: -10px;
+      width: 20px;
+      height: 20px;
+      z-index: 50;
+    }
+    &:after {
+      display: none;
+    }
+  }
+
+  & .swiper-button-next--series {
+    position: absolute;
+    top:43%;
+    right: -59px;
+    content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/arrow-next.svg");
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    @include tb {
+      top: 40%;
+      right: -10px;
+      width: 20px;
+      height: 20px;
+      z-index: 50;
+    }
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 32px;
+  height: 4px;
+  border-radius: 0px;
+  background: $gray;
+  opacity: 1;
+  &.swiper-pagination-bullet-active {
+    background: $orange;
+  }
+}
+
+.slider_fv {
+  width: 100%;
+  margin: 0 auto;
+  &_nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &_wrapper {
+      position: absolute;
+      width: 19.6%;
+      right: 6%;
+      bottom: 6.3%;
+      z-index: 30;
+      @media screen and (max-width: 875px) {
+        bottom: 0%;
+     }
+     @include sp {
+       width: 200px;
+       right: 50%;
+       transform: translateX(50%);
+       bottom: -50px;
+     }
+    }
+  }
+
+  & .swiper-pagination {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    &-bullet {
+      width: 8%;
+      padding-top:8%;
+      position:relative;
+      margin-top: 3px!important;
+      background: #707070;
+      &:last-child {
+        margin-right: 0px!important;
+      }
+      &.swiper-pagination-bullet-active {
+        background: $orange;
+      }
+    }
+  }
+
+  & .swiper-button-prev {
+    position: relative;
+    content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/fv_arrow_prev.svg");
+    width: 20%;
+    left: -15px;
+    &:after {
+      display: none;
+    }
+  }
+
+  .swiper-button-next {
+    position: relative;
+    content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/fv_arrow_next.svg");
+    width: 20%;
+    right: -19px;
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.slider_mv {
+  width: 100%;
+  margin: 40px 0 80px;
+  @include sp {
+    margin-bottom: 40px;
+  }
+  & .swiper-pagination {
+    bottom: -30%;
+  }
+}
+
+
+

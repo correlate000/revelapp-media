@@ -1,0 +1,72 @@
+.c-page-link {
+  display: flex;
+  justify-content: space-between;
+  &_wrap {
+    max-width:100%;
+    width: 990px;
+    margin: 0 auto;
+    padding: 10px 0;
+    @include sp {
+      width: 100%;
+    }
+  }
+  &_list {
+    @include fz(20,14);
+    width: calc(100% / 3);
+    border-right: solid 1px $black;
+    position: relative;
+    & a:hover {
+      color: $orange;
+      transition: .5s;
+    }
+    &:last-child {
+      border-right: 0px;
+    }
+    &.prev a:before {
+      content: '';
+      display: inline-block;
+      background-image: url('https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/local-nav-arrow-prev.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 20%;
+      @include sp {
+        width: 10px;
+        height: 10px;
+        background-size: 50%;
+        left: 5px;
+      }
+    }
+    &.next a:after {
+      content: '';
+      display: inline-block;
+      background-image: url('https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/local-nav-arrow-next.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20%;
+      @include sp {
+        width: 10px;
+        height: 10px;
+        background-size: 50%;
+        right: 5px;
+      }
+    }
+    & a {
+      display: block;
+      text-align: center;
+      padding: 20px 0;
+    }
+    &_archive {
+      font-weight: bold;
+    }
+  }
+}

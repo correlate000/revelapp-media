@@ -22,7 +22,7 @@
     position: absolute;
     top: 50%;
     left: -49px;
-    content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/arrow-prev.svg");
+    content: url("../../img/arrow-prev.svg");
     width: 32px;
     height: 32px;
     cursor: pointer;
@@ -46,7 +46,7 @@
     position: absolute;
     top: 50%;
     right: -49px;
-    content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/arrow-next.svg");
+    content: url("../../img/arrow-next.svg");
     width: 32px;
     height: 32px;
     cursor: pointer;
@@ -77,7 +77,7 @@
     position: absolute;
     top: 34%;
     left: -67px;
-    content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/arrow-prev.svg");
+    content: url("../../img/arrow-prev.svg");
     width: 32px;
     height: 32px;
     cursor: pointer;
@@ -97,7 +97,7 @@
     position: absolute;
     top: 34%;
     right: -59px;
-    content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/arrow-next.svg");
+    content: url("../../img/arrow-next.svg");
     width: 32px;
     height: 32px;
     cursor: pointer;
@@ -124,7 +124,7 @@
     position: absolute;
     top: 43%;
     left: -67px;
-    content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/arrow-prev.svg");
+    content: url("../../img/arrow-prev.svg");
     width: 32px;
     height: 32px;
     cursor: pointer;
@@ -144,7 +144,7 @@
     position: absolute;
     top:43%;
     right: -59px;
-    content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/arrow-next.svg");
+    content: url("../../img/arrow-next.svg");
     width: 32px;
     height: 32px;
     cursor: pointer;
@@ -219,7 +219,7 @@
 
   & .swiper-button-prev {
     position: relative;
-    content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/fv_arrow_prev.svg");
+    content: url("../../img/fv_arrow_prev.svg");
     width: 20%;
     left: -15px;
     &:after {
@@ -229,7 +229,7 @@
 
   .swiper-button-next {
     position: relative;
-    content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/fv_arrow_next.svg");
+    content: url("../../img/fv_arrow_next.svg");
     width: 20%;
     right: -19px;
     &:after {

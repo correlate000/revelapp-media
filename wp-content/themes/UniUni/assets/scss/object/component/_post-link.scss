@@ -25,7 +25,7 @@
     &.prev a:before {
       content: '';
       display: inline-block;
-      background-image: url('https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/local-nav-arrow-prev.svg');
+      background-image: url('../../img/local-nav-arrow-prev.svg');
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
@@ -44,7 +44,7 @@
     &.next a:after {
       content: '';
       display: inline-block;
-      background-image: url('https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/local-nav-arrow-next.svg');
+      background-image: url('../../img/local-nav-arrow-next.svg');
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;

@@ -27,7 +27,7 @@
     position: relative;
     font-weight: bold;
     letter-spacing: 0.11em;
-    background: #FFD1D1;
+    background: #e5f0ff;
     padding: 0.9em 1.3em;
     margin: 70px 0 30px;
     @include sp {
@@ -127,7 +127,7 @@
       margin-bottom: 20px;
     }
     &:before {
-      content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/quote.svg");
+      content: url("../../img/quote.svg");
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -157,7 +157,7 @@
       padding-right: 30px;
     }
     &:after {
-      content: url("https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/link-button_icon.svg");
+      content: url("../../img/link-button_icon.svg");
       display: flex;
       flex-direction: column;
       justify-content: center;

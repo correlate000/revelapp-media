@@ -2,7 +2,7 @@
   margin-bottom: 29px;
   &_inner {
     padding-top: 41px;
-    background: #F5F5F5;
+    background: rgb(233 247 255);
     position: relative;
     @include sp {
       padding-top: 20px;
@@ -15,7 +15,7 @@
       position: absolute;
       top: 20%;
       right: 0%;
-      background: #FA0012;
+      background: $orange;
       @include sp {
         top: 17%;
         height: 20%;
@@ -28,7 +28,7 @@
       position: absolute;
       bottom: 10%;
       left: 0%;
-      background: #FA0012;
+      background: $orange;
       @include sp {
         bottom: 22%;
         height: 13%;

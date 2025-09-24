@@ -1,0 +1,330 @@
+# Translation of Plugins - WPFront Scroll Top - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - WPFront Scroll Top - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-09-12 13:21:32+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - WPFront Scroll Top - Stable (latest release)\n"
+
+#: includes/settings/class-settings-view-model.php:446
+msgid "Font Awesome URL"
+msgstr "Font Awesome URL"
+
+#: includes/settings/class-settings-view-model.php:445
+msgid "Icon Class"
+msgstr "アイコンクラス"
+
+#: includes/settings/class-settings-view-model.php:452
+msgid "Offset"
+msgstr "オフセット"
+
+#: includes/settings/class-settings-view-model.php:458
+msgid "Select Image"
+msgstr "選択"
+
+#: includes/settings/class-settings-view-model.php:456
+msgid "Media Library"
+msgstr "メディアライブラリ"
+
+#: includes/settings/class-settings-view-model.php:531
+msgid "Image Button"
+msgstr "ボタン画像"
+
+#: includes/settings/class-settings-view-model.php:533
+msgid "Font Awesome Button"
+msgstr "Font Awesome ボタン"
+
+#: includes/settings/class-settings-view-model.php:506
+#: includes/settings/class-settings-view-model.php:507
+#: includes/settings/class-settings-view-model.php:511
+msgid "ex:"
+msgstr "例:"
+
+#: includes/settings/class-settings-view-model.php:453
+msgid "How to find CSS selector?"
+msgstr "CSS セレクターの見つけ方"
+
+#: includes/settings/class-settings-view-model.php:545
+msgid "Scroll to Element"
+msgstr "指定要素へスクロール"
+
+#: includes/settings/class-settings-view-model.php:544
+msgid "Scroll to Top"
+msgstr "ページ先頭にスクロール"
+
+#: includes/settings/class-settings-view-model.php:448
+msgid "Icon Color"
+msgstr "アイコン色"
+
+#: includes/settings/class-settings-view-model.php:447
+msgid "Do not include URL"
+msgstr "URL を含めない"
+
+#: includes/settings/class-settings-view-model.php:443
+msgid "Mouse Over Color"
+msgstr "マウスオーバー色"
+
+#: includes/settings/class-settings-view-model.php:451
+msgid "Scroll Container CSS Selector"
+msgstr "スクロール部コンテナの CSS セレクタ"
+
+#: includes/settings/class-settings-view-model.php:420
+msgid "Javascript Async"
+msgstr "JavaScript の非同期読み込み"
+
+#: includes/settings/class-settings-view-model.php:454
+msgid "Page URL"
+msgstr "ページの URL"
+
+#: includes/settings/class-settings-view-model.php:450
+msgid "Element CSS Selector"
+msgstr "要素の CSS セレクタ"
+
+#: includes/settings/class-settings-view-model.php:546
+msgid "Link to Page"
+msgstr "ページにリンク"
+
+#: includes/settings/class-settings-view-model.php:433
+msgid "Button Action"
+msgstr "ボタンクリック時の動作"
+
+#: includes/settings/class-settings-view-model.php:457
+msgid "Choose Image"
+msgstr "メディアの選択またはアップロード"
+
+#: includes/settings/class-settings-view-model.php:500
+#: includes/settings/class-settings-view-model.php:501
+msgid "Use the textbox below to specify the post IDs as a comma separated list."
+msgstr "下のテキストボックスで投稿 ID をカンマ区切りで指定してください。"
+
+#: includes/settings/class-settings-view-model.php:514
+msgid "Negative value allowed. Use this filed to precisely set scroll position. Useful when you have overlapping elements."
+msgstr "負の値を設定してスクロール位置をより正確に指定することもできます。要素が重なっているときに有効な方法です。"
+
+#: includes/settings/class-settings-view-model.php:513
+msgid "CSS selector of the element, which has the scroll bar. \"html, body\" works in almost all cases."
+msgstr "スクロールバーが表示される要素の CSS セレクタ。html や body はほとんどの場合で有効です。"
+
+#: includes/settings/class-settings-view-model.php:512
+msgid "CSS selector of the element, you are trying to scroll to. Ex: #myDivID, .myDivClass"
+msgstr "スクロールしようとする要素の CSS セレクタ。例: #myDivID, .myDivClass など"
+
+#: includes/settings/class-settings-view-model.php:491
+msgid "Default action on WP-ADMIN pages."
+msgstr "デフォルトの動作。WP-ADMIN ページでも機能します。"
+
+#: includes/settings/class-settings-view-model.php:476
+msgid "Increases site performance. Keep it enabled, if there are no conflicts."
+msgstr "サイトのパフォーマンス向上につながります。他のプラグインとの競合など不具合がなければ有効にしておいてください。"
+
+#: includes/settings/class-settings-view.php:128
+msgid "Save Changes"
+msgstr "変更を保存"
+
+#: includes/settings/class-settings-view.php:55
+msgid "Filter"
+msgstr "フィルター"
+
+#: includes/settings/class-settings-view-model.php:419
+msgid "Enabled"
+msgstr "有効"
+
+#: includes/settings/class-settings-view-model.php:440
+msgid "Text"
+msgstr "テキスト"
+
+#: includes/settings/class-settings-view-model.php:221
+msgid "Settings"
+msgstr "設定"
+
+#: includes/settings/class-settings-view-model.php:444
+#: includes/settings/class-settings-view-model.php:449
+msgid "Custom CSS"
+msgstr "カスタム CSS"
+
+#: includes/settings/class-settings-view-model.php:437
+msgid "Custom URL"
+msgstr "カスタム URL"
+
+#: includes/settings/class-settings-view.php:53
+msgid "Display"
+msgstr "表示"
+
+#: includes/settings/class-settings-view-model.php:434
+#: includes/settings/class-settings-view.php:54
+msgid "Location"
+msgstr "場所"
+
+#: includes/settings/class-settings-view-model.php:442
+msgid "Background Color"
+msgstr "背景色"
+
+#: includes/settings/class-settings-view-model.php:441
+msgid "Text Color"
+msgstr "テキスト色"
+
+#: includes/settings/class-settings-view-model.php:422
+msgid "Button Size"
+msgstr "ボタンサイズ"
+
+#: includes/settings/class-settings-view-model.php:560
+msgid "Top Left"
+msgstr "左上"
+
+#: includes/settings/class-settings-view-model.php:559
+msgid "Top Right"
+msgstr "右上"
+
+#: includes/settings/class-settings-view-model.php:558
+msgid "Bottom Left"
+msgstr "左下"
+
+#: includes/settings/class-settings-view-model.php:557
+msgid "Bottom Right"
+msgstr "右下"
+
+#: includes/settings/class-settings-view-model.php:532
+msgid "Text Button"
+msgstr "テキストボタン"
+
+#. Author URI of the plugin
+#: wpfront-scroll-top.php
+msgid "http://wpfront.com"
+msgstr "http://wpfront.com"
+
+#. Plugin URI of the plugin
+#: wpfront-scroll-top.php
+msgid "http://wpfront.com/scroll-top-plugin/"
+msgstr "http://wpfront.com/scroll-top-plugin/"
+
+#: includes/settings/class-settings-view-model.php:432
+msgid "Button Style"
+msgstr "ボタンのスタイル"
+
+#: includes/settings/class-settings-view-model.php:428
+msgid "Hide on Small Window"
+msgstr "小さいウィンドウでは非表示"
+
+#: includes/settings/class-settings-view.php:149
+msgid "Write a review"
+msgstr "レビューを書く"
+
+#: includes/settings/class-settings-view.php:148
+msgid "Settings description"
+msgstr "設定の説明"
+
+#: includes/settings/class-settings-view-model.php:142
+#: includes/settings/class-settings-view.php:71
+msgid "WPFront Scroll Top Settings"
+msgstr "WPFront Scroll Top 設定"
+
+#: includes/settings/class-settings-view-model.php:455
+msgid "Display on Pages"
+msgstr "表示するページ"
+
+#: includes/settings/class-settings-view-model.php:436
+msgid "Margin Y"
+msgstr "縦方向のマージン"
+
+#: includes/settings/class-settings-view-model.php:435
+msgid "Margin X"
+msgstr "横方向のマージン"
+
+#: includes/settings/class-settings-view-model.php:426
+msgid "Auto Hide"
+msgstr "自動的に非表示"
+
+#: includes/settings/class-settings-view-model.php:427
+msgid "Auto Hide After"
+msgstr "非表示までの秒数"
+
+#: includes/settings/class-settings-view-model.php:425
+msgid "Scroll Duration"
+msgstr "スクロールの速さ"
+
+#: includes/settings/class-settings-view-model.php:424
+msgid "Button Fade Duration"
+msgstr "フェードアウトまでの秒数"
+
+#: includes/settings/class-settings-view-model.php:423
+msgid "Button Opacity"
+msgstr "ボタンの不透明度"
+
+#: includes/settings/class-settings-view.php:150
+msgid "Buy me a Beer or Coffee"
+msgstr "プラグインが気に入ったら、ビールかコーヒーをおごってください"
+
+#: includes/settings/class-settings-view-model.php:421
+msgid "Scroll Offset"
+msgstr "スクロールオフセット値"
+
+#. Plugin Name of the plugin
+#: wpfront-scroll-top.php
+msgid "WPFront Scroll Top"
+msgstr "WPFront Scroll Top"
+
+#: includes/settings/class-settings-view-model.php:430
+msgid "Hide on WP-ADMIN"
+msgstr "管理画面 (WP-ADMIN) で隠す"
+
+#: includes/settings/class-settings-view-model.php:438
+msgid "Image ALT"
+msgstr "画像の ALT 属性値"
+
+#: includes/settings/class-settings-view-model.php:429
+msgid "Small Window Max Width"
+msgstr "ウィンドウの最小幅"
+
+#: includes/settings/class-settings-view-model.php:431
+msgid "Hide on iframes"
+msgstr "iframe で隠す"
+
+#: includes/settings/class-settings-view-model.php:143
+msgid "Scroll Top"
+msgstr "Scroll Top"
+
+#: includes/settings/class-settings-view-model.php:496
+#: includes/settings/class-settings-view-model.php:497
+msgid "Negative values allowed."
+msgstr "負の値も設定できます。"
+
+#: includes/settings/class-settings-view-model.php:486
+msgid "Button will be hidden on 'wp-admin'."
+msgstr "wp-admin ではボタンは非表示になります。"
+
+#: includes/settings/class-settings-view-model.php:572
+msgid "All pages"
+msgstr "すべてのページ"
+
+#: includes/settings/class-settings-view-model.php:483
+msgid "Button will be auto hidden after this duration in seconds, if enabled."
+msgstr "有効な場合、ボタンはこの時間 (秒) が経過すると自動的に非表示になります。"
+
+#: includes/settings/class-settings-view-model.php:484
+msgid "Button will be hidden on broswer window when the width matches."
+msgstr "ウインドウ幅が指定値にマッチするとボタンが隠れます。"
+
+#: includes/settings/class-settings-view-model.php:485
+msgid "Button will be hidden on browser window with lesser or equal width."
+msgstr "ウインドウ幅が指定値以下になるとボタンが隠れます。"
+
+#: includes/settings/class-settings-view-model.php:481
+msgid "Window scroll duration in milliseconds."
+msgstr "ウィンドウのスクロール時間 (ミリ秒)。"
+
+#: includes/settings/class-settings-view-model.php:480
+msgid "Button fade duration in milliseconds."
+msgstr "ボタンのフェード時間 (ミリ秒)。"
+
+#: includes/settings/class-settings-view-model.php:477
+msgid "Number of pixels to be scrolled before the button appears."
+msgstr "ボタンが表示されるまでにスクロールさせるピクセル数。"
+
+#: includes/settings/class-settings-view-model.php:487
+msgid "Button will be hidden on iframes, usually inside popups."
+msgstr "ボタンが iframe 上 (通常はポップアップ内) で非表示になります。"

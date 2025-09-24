@@ -1,0 +1,40 @@
+# Translation of Plugins - mypace Custom Meta Robots - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - mypace Custom Meta Robots - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-12-12 15:13:21+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - mypace Custom Meta Robots - Stable (latest release)\n"
+
+#: mypace-custom-meta-robots.php:69
+msgid "None (Do not output meta robots definition.)"
+msgstr "なし（meta robots指定を出力しません）"
+
+#: mypace-custom-meta-robots.php:47
+msgid "meta robots difinition"
+msgstr "meta robotsの指定"
+
+#. Author URI of the plugin
+msgid "http://mypacecreator.net/"
+msgstr "http://mypacecreator.net/"
+
+#. Author of the plugin
+msgid "Kei Nomura (mypacecreator)"
+msgstr "Kei Nomura (mypacecreator)"
+
+#. Description of the plugin
+msgid "This plugin allows you to edit meta robots tag at every singular post(posts, pages, custom post types). This is a very simple plugin."
+msgstr "このプラグインは、個別ページ（投稿、固定ページ、カスタム投稿タイプの投稿）のmeta robotsの値を指定できるようにする、とてもシンプルなプラグインです。"
+
+#. Plugin URI of the plugin
+msgid "https://github.com/mypacecreator/mypace-custom-meta-robots"
+msgstr "https://github.com/mypacecreator/mypace-custom-meta-robots"
+
+#. Plugin Name of the plugin
+msgid "mypace Custom Meta Robots"
+msgstr "mypace Custom Meta Robots"

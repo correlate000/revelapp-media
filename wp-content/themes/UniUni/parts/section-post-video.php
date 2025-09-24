@@ -9,7 +9,7 @@
                 src="<?php the_post_thumbnail_url( '' ); ?>"
                 alt="<?php the_title(); ?>"/>
                 <img class="p-video_youtube_btn"
-                src="https://test.wellstech.jp/media/wp-content/themes/giftechs/assets/img/post_youtube_thumb_mask.svg"
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/post_youtube_thumb_mask.svg"
                 alt="動画再生ボタン"
                 />
                 <iframe

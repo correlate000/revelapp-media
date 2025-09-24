@@ -1,8 +1,8 @@
 <section class="p-top_cat l-section--cat">
   <div class="l-container">
     <div class="p-top_cat_top c-head">
-      <h2 class="p-top_cat_top_title c-title">体験談・コラム</h2>
-      <a href="<?php echo home_url(); ?>/category/column" class="p-top_cat_top_archive c-button">一覧を見る</a>
+      <h2 class="p-top_cat_top_title c-title">導入事例</h2>
+      <a href="<?php echo home_url(); ?>/category/customerstory" class="p-top_cat_top_archive c-button">一覧を見る</a>
     </div>
 
     <?php if( wp_is_mobile()) : ?>
@@ -11,7 +11,7 @@
       <!--ここにPCの時のHTMLコードを記述-->
       <?php
       $args = [
-      'category_name' => 'column',
+      'category_name' => 'customerstory',
       'numberposts' => 1
       ];
 
@@ -38,7 +38,7 @@
         <!--ここにスマホ・タブレットのときのHTMLコードを記述-->
         <?php
         $args = [
-        'category_name' => 'column',
+        'category_name' => 'customerstory',
         'numberposts' => 3
         ];
         ?>
@@ -58,7 +58,7 @@
       <!--ここにPCの時のHTMLコードを記述-->
       <?php
       $args = [
-      'category_name' => 'column',
+      'category_name' => 'customerstory',
       'numberposts' => 3
       , 'offset' => 1 //表示しない件数
       ];

@@ -1534,7 +1534,7 @@ header {
 }
 .slider_fv .swiper-button-prev, .slider_fv .l-mv_swiper .swiper-button-prev--mv, .l-mv_swiper .slider_fv .swiper-button-prev--mv {
   position: relative;
-  content: url("../../img/fv_arrow_prev.svg");
+  content: url("../../assets/img/fv_arrow_prev.svg");
   width: 20%;
   left: -15px;
 }
@@ -1543,7 +1543,7 @@ header {
 }
 .slider_fv .swiper-button-next, .slider_fv .l-mv_swiper .swiper-button-next--mv, .l-mv_swiper .slider_fv .swiper-button-next--mv {
   position: relative;
-  content: url("../../img/fv_arrow_next.svg");
+  content: url("../../assets/img/fv_arrow_next.svg");
   width: 20%;
   right: -19px;
 }
@@ -1749,7 +1749,7 @@ header {
 .c-button:after, .c-button--series:after, .is-hidden.c-button--series:after, .c-button--rank:after, .is-hidden.c-button--rank:after, .c-button.is-hidden:after {
   position: absolute;
   right: 0;
-  content: url("../../img/button.svg");
+  content: url("../../assets/img/button.svg");
 }
 .c-button--rank {
   display: flex;

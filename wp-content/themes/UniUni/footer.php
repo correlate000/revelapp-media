@@ -25,9 +25,7 @@
 </footer>
 </div>
 <!-- JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js" defer></script>
+<!-- スクリプトはwp_enqueue_scriptsで管理されています -->
 
 <script>
 <!--

@@ -219,7 +219,7 @@
 
   & .swiper-button-prev {
     position: relative;
-    content: url("../../img/fv_arrow_prev.svg");
+    content: url("../../assets/img/fv_arrow_prev.svg");
     width: 20%;
     left: -15px;
     &:after {
@@ -229,7 +229,7 @@
 
   .swiper-button-next {
     position: relative;
-    content: url("../../img/fv_arrow_next.svg");
+    content: url("../../assets/img/fv_arrow_next.svg");
     width: 20%;
     right: -19px;
     &:after {

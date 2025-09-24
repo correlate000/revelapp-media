@@ -1,8 +1,8 @@
 <section class="p-top_cat l-section--cat">
   <div class="l-container">
     <div class="p-top_cat_top c-head">
-      <h2 class="p-top_cat_top_title c-title">アート</h2>
-      <a href="<?php echo home_url(); ?>/category/art" class="p-top_cat_top_archive c-button">一覧を見る</a>
+      <h2 class="p-top_cat_top_title c-title">ゲーム</h2>
+      <a href="<?php echo home_url(); ?>/category/game" class="p-top_cat_top_archive c-button">一覧を見る</a>
     </div>
     <?php if( wp_is_mobile()) : ?>
       <!--ここにスマホ・タブレットのときのHTMLコードを記述-->
@@ -10,7 +10,7 @@
       <!--ここにPCの時のHTMLコードを記述-->
       <?php
       $args = [
-      'category_name' => 'art',
+      'category_name' => 'game',
       'numberposts' => 1
       ];
 
@@ -36,7 +36,7 @@
         <!--ここにスマホ・タブレットのときのHTMLコードを記述-->
         <?php
         $args = [
-        'category_name' => 'art',
+        'category_name' => 'game',
         'numberposts' => 3
         ];
         ?>
@@ -56,7 +56,7 @@
       <!--ここにPCの時のHTMLコードを記述-->
       <?php
       $args = [
-      'category_name' => 'art',
+      'category_name' => 'game',
       'numberposts' => 3
       , 'offset' => 1 //表示しない件数
       ];

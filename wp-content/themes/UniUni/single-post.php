@@ -11,7 +11,6 @@ else: ?>
 
 <main>
     <?php get_template_part('parts/section-post-mv');?>
-    <?php get_template_part('parts/section-nav');?>
     <section class="l-section--content">
     <div class="l-container--post post-contents">
     <?php the_content(); ?>
@@ -19,7 +18,6 @@ else: ?>
     <?php get_template_part('parts/section-article');?>
 
     </section>
-<?php get_template_part('parts/section-nav');?>
 <?php get_template_part('parts/section-share');?>
 <?php get_template_part('parts/section-post-sns-fixed');?>
 </div>

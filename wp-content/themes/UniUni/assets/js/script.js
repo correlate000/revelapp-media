@@ -662,10 +662,13 @@ $(function() {
     });
   }
   $(".p-video_youtube_btn").click(function() {
-    var player = $(this).next("iframe")[0].contentWindow;
-    player.postMessage('{"event":"command","func":"playVideo","args":""}', "*");
-    $(this).hide();
-    $(".p-video_youtube_thumb").hide();
+    var iframe = $(this).siblings("iframe");
+    if (iframe.length > 0 && iframe[0].contentWindow) {
+      var player = iframe[0].contentWindow;
+      player.postMessage('{"event":"command","func":"playVideo","args":""}', "*");
+      $(this).hide();
+      $(this).siblings(".p-video_youtube_thumb").hide();
+    }
   });
 });
 

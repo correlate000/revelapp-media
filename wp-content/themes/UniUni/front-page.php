@@ -24,10 +24,6 @@
     </div>
   </section>
 
-  <!--動画-->
-  <section class="p-top_video l-section--video">
-    <?php get_template_part('parts/section-top-video');?>
-  </section>
 
   <!--連載-->
   <section class="p-top_serialization l-section--serialization">
@@ -39,17 +35,6 @@
   <!--カテゴリページ-->
   <?php //get_template_part('parts/section-top_cat-news');?>
   <?php get_template_part('parts/section-top_cat-taikendan');?>
-
-
-    <!--おすすめ書籍-->
-    <section class="p-top_book l-section--book">
-      <?php get_template_part('parts/section-top-book');?>
-    </section>
-
-    <!--おすすめ映画-->
-    <section class="p-top_book l-section--book">
-      <?php get_template_part('parts/section-top-movie');?>
-    </section>
 
 
   <?php get_template_part('parts/section-top_cat-art');?>

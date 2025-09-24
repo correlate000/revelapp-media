@@ -143,3 +143,27 @@ function setPostViews($postID) {
 }
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 
+// スクリプトの適切な登録と読み込み
+function theme_scripts() {
+    // フロントエンドのみでjQueryを登録解除・再登録
+    if (!is_admin()) {
+        // WordPressのデフォルトjQueryを登録解除
+        wp_deregister_script('jquery');
+
+        // カスタムjQueryを登録
+        wp_register_script('jquery', 'https://code.jquery.com/jquery-3.4.1.min.js', array(), '3.4.1', true);
+
+        // Swiperを登録
+        wp_register_script('swiper', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), null, true);
+
+        // テーマのメインスクリプトを登録（jQueryに依存）
+        wp_register_script('theme-script', get_template_directory_uri() . '/assets/js/script.js', array('jquery', 'swiper'), '1.0.0', true);
+
+        // スクリプトをエンキュー
+        wp_enqueue_script('jquery');
+        wp_enqueue_script('swiper');
+        wp_enqueue_script('theme-script');
+    }
+}
+add_action('wp_enqueue_scripts', 'theme_scripts');
+
